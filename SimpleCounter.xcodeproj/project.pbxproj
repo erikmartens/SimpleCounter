@@ -190,6 +190,7 @@
 				F2A6F35520B3410C003409A3 /* Resources */,
 				C6D05547A78D181AF97FD326 /* [CP] Embed Pods Frameworks */,
 				173284B2F47E02F669522E9E /* [CP] Copy Pods Resources */,
+				F26A6D2E20E299C60033BC49 /* Swift Lint Run Script */,
 			);
 			buildRules = (
 			);
@@ -385,6 +386,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleCounterTests/Pods-SimpleCounterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F26A6D2E20E299C60033BC49 /* Swift Lint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 		F8E652C09E85CFDC7D669730 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
