@@ -66,3 +66,9 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+## Local File System
+.DS_Store
+
+## Node
+node_modules/

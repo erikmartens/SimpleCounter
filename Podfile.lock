@@ -1,0 +1,27 @@
+PODS:
+  - Bond (6.6.1):
+    - Differ (~> 1.0)
+    - ReactiveKit (~> 3.8)
+  - Differ (1.0.3)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - ReactiveKit (3.9.1)
+  - SwiftLint (0.25.0)
+
+DEPENDENCIES:
+  - Bond (~> 6.6.1)
+  - R.swift (~> 4.0.0)
+  - SwiftLint (~> 0.25.0)
+
+SPEC CHECKSUMS:
+  Bond: d83b0b693578429a285eec2c46a829ea24831604
+  Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  ReactiveKit: 472aeba0d3ae838d8b813cce62b42d4b29368f2c
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+
+PODFILE CHECKSUM: b4adaaab5001c8b46eccb076775e184d42b4046a
+
+COCOAPODS: 1.4.0
