@@ -33,10 +33,13 @@ extension AppCoordinator {
     func start() {
         
         /* counter list */
+        let counterListData = dependencyManager.dataStore.readValue(for: kCounterListIdentifier, fromDictWithStorageType: .userData) as? [String: [StepperList]]
+        let viewModel = CounterListViewModel(counterList: counterListData)
+        
         let counterListNav = R.storyboard.counterListStoryboard().instantiateInitialViewController() as! UINavigationController
         let counterList = counterListNav.viewControllers.first as? CounterListViewController
-        counterList.router = self
-        counterList.viewModel =
+        counterList?.router = self
+        counterList?.viewModel = viewModel
         counterList?.title = R.string.localizable.tabBar_counterListTitle().uppercased()
         counterList?.tabBarItem.selectedImage = R.image.tabbar_counter_list_active()
         counterList?.tabBarItem.image = R.image.tabbar_counter_list_inactive()

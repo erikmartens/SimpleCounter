@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class CounterListViewModel {
+    
+    // MARK: - Properties
+    
+    // MARK: - Initialization
+    
+    init(counterList: [String: [StepperList]]?) {
+        
+    }
+    
+}
