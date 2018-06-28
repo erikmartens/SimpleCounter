@@ -67,6 +67,10 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
+# R.Swift
+
+*.generated.swift
+
 ## Local File System
 .DS_Store
 

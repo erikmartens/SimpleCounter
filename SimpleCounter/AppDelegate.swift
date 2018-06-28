@@ -10,37 +10,83 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    
+    // MARK: - Properties
+    
+    internal var window: UIWindow?
+    private var mainTabBarController: UITabBarController?
+    
+    private var dependencyManager: DependencyManager?
+    private var appRouter: AppCoordinator?
+    
+    // MARK: - Computed Properties
+    
+    internal lazy var fileManager: FileManager = {
+        return FileManager.default
+    }()
+    
+    internal lazy var fileBaseDirectoryUrlGetter: (() -> (URL)) = {
+        return { [unowned self] in
+            guard let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                // only detect nil for reporting, app should crash if error is encountered
+                // TODO: Error Logging
+                fatalError()
+            }
+            return url
+        }
+    }()
+    
+    // MARK: - Application Life Cycle
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        dependencyManager = DependencyManager(fileManager: fileManager, fileDirectoryBaseUrlGetter: fileBaseDirectoryUrlGetter)
+        
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        setupAppearanceProxies()
+        startApp()
+        
+        return true
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
+    
+    func applicationWillResignActive(_ application: UIApplication) {}
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {}
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {}
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {}
+    
+    func applicationWillTerminate(_ application: UIApplication) {}
 }
 
+// MARK: - Helper Functions
+
+extension AppDelegate {
+    
+    // TODO: Transform to NSOperations
+    // approuter has to show initial view controller AFTER tabbar was set up
+    
+    // 1.
+    fileprivate func setupAppearanceProxies() {
+        
+        /* tab bar */
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .red
+    }
+    
+    // 2.
+    fileprivate func startApp() {
+        mainTabBarController = UITabBarController()
+        appRouter = AppCoordinator(dependencyManager: dependencyManager!, mainTabBarController: mainTabBarController!)
+        
+        appRouter?.start()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = mainTabBarController
+        window?.makeKeyAndVisible()
+    }
+}

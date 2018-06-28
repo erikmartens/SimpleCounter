@@ -13,31 +13,23 @@ class DependencyManager {
     
     // MARK: - Properties
     
-    private let application: UIApplication
-    private let mainBundle: Bundle
+    //    private let application: UIApplication
+    //    private let mainBundle: Bundle
     private let fileManager: FileManager
+    private let fileDirectoryBaseUrlGetter: (() -> (URL))
     
     // MARK: - Intialization
     
-    init(application: UIApplication, mainBundle: Bundle, fileManager: FileManager) {
-        self.application = application
-        self.mainBundle = mainBundle
+    init(/*application: UIApplication, mainBundle: Bundle, */fileManager: FileManager, fileDirectoryBaseUrlGetter: @escaping (() -> (URL))) {
+        //        self.application = application
+        //        self.mainBundle = mainBundle
         self.fileManager = fileManager
+        self.fileDirectoryBaseUrlGetter = fileDirectoryBaseUrlGetter
     }
     
     // MARK: - Dependencies
     
     lazy var dataStore: DataStore = { [unowned self] in
-        
-        var userFileStorageBaseDirectoryGetter: (() -> (URL)) = { [unowned self] in
-            guard let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
-                // only detect nil for reporting, app should crash if error is encountered
-                // TODO: Error Logging
-                fatalError()
-            }
-            return url
-        }
-        
-        return DataStore(fileManager: fileManager, baseDirectoryUrlGetter: userFileStorageBaseDirectoryGetter)
+        return DataStore(fileManager: fileManager, fileDirectoryBaseUrlGetter: fileDirectoryBaseUrlGetter)
         }()
 }

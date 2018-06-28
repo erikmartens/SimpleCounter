@@ -18,14 +18,14 @@ class DataStore {
     // MARK: - Properties
     
     fileprivate let fileManager: FileManager
-    private let baseDirectoryUrlGetter: () -> (URL)
+    private let fileDirectoryBaseUrlGetter: () -> (URL)
     
     // MARK: - Initialization
     
-    init(fileManager: FileManager, baseDirectoryUrlGetter: @escaping (() -> (URL))) {
+    init(fileManager: FileManager, fileDirectoryBaseUrlGetter: @escaping (() -> (URL))) {
         
         self.fileManager = fileManager
-        self.baseDirectoryUrlGetter = baseDirectoryUrlGetter
+        self.fileDirectoryBaseUrlGetter = fileDirectoryBaseUrlGetter
         
         // basedirectoy (application support directory) may not exist yet, has to be created first
         if !fileManager.fileExists(atPath: baseDirectoryUrl.path, isDirectory: nil) {
@@ -103,7 +103,7 @@ extension DataStore {
 extension DataStore {
    
     fileprivate var baseDirectoryUrl: URL {
-        return baseDirectoryUrlGetter()
+        return fileDirectoryBaseUrlGetter()
     }
     
     fileprivate func fileName(for storageType: StorageType) -> String {
