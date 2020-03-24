@@ -14,7 +14,7 @@ class CounterListViewModel {
     
     // MARK: - Initialization
     
-    init(counterList: [String: [StepperList]]?) {
+    init(counterList: [String: [CounterList]]?) {
         
     }
     

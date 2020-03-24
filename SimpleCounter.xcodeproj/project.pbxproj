@@ -14,14 +14,14 @@
 		F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */; };
 		F26A6D4220E2D7130033BC49 /* CounterListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */; };
 		F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */; };
-		F26A6D4720E3AA220033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4620E3AA220033BC49 /* CounterList.swift */; };
-		F26A6D4920E3AC6F0033BC49 /* StepperList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* StepperList.swift */; };
-		F26A6D4B20E3AC880033BC49 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Stepper.swift */; };
+		F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* CounterList.swift */; };
+		F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Counter.swift */; };
 		F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */; };
 		F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5420E5785D0033BC49 /* R.generated.swift */; };
 		F26A6D5720E57BB50033BC49 /* CounterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */; };
+		F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB960242ABC8A003C1B3C /* MainFlow.swift */; };
+		F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB962242ABC95003C1B3C /* MainStepper.swift */; };
 		F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F34620B3410B003409A3 /* AppDelegate.swift */; };
-		F2A6F34C20B3410B003409A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34A20B3410B003409A3 /* Main.storyboard */; };
 		F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34D20B3410C003409A3 /* Assets.xcassets */; };
 		F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */; };
 		F2A6F35C20B3410C003409A3 /* SimpleCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F35B20B3410C003409A3 /* SimpleCounterTests.swift */; };
@@ -57,15 +57,15 @@
 		F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewController.swift; sourceTree = "<group>"; };
 		F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CounterListStoryboard.storyboard; sourceTree = "<group>"; };
 		F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
-		F26A6D4620E3AA220033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
-		F26A6D4820E3AC6F0033BC49 /* StepperList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperList.swift; sourceTree = "<group>"; };
-		F26A6D4A20E3AC880033BC49 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		F26A6D4820E3AC6F0033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
+		F26A6D4A20E3AC880033BC49 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = SimpleCounter/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F26A6D5420E5785D0033BC49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListRouter.swift; sourceTree = "<group>"; };
+		F27AB960242ABC8A003C1B3C /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		F27AB962242ABC95003C1B3C /* MainStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStepper.swift; sourceTree = "<group>"; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F34620B3410B003409A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2A6F34B20B3410B003409A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2A6F34D20B3410C003409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A6F35020B3410C003409A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2A6F35220B3410C003409A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,19 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				F26A6D3320E2A2430033BC49 /* Launchscreen Scene */,
-				F26A6D3220E2A2350033BC49 /* Main Scene */,
 				F26A6D3D20E2D3980033BC49 /* Counter List Scene */,
 				F26A6D3E20E2D3B40033BC49 /* Settings Scene */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		F26A6D3220E2A2350033BC49 /* Main Scene */ = {
-			isa = PBXGroup;
-			children = (
-				F2A6F34A20B3410B003409A3 /* Main.storyboard */,
-			);
-			path = "Main Scene";
 			sourceTree = "<group>";
 		};
 		F26A6D3320E2A2430033BC49 /* Launchscreen Scene */ = {
@@ -188,9 +179,8 @@
 		F26A6D4520E3A5FA0033BC49 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F26A6D4620E3AA220033BC49 /* CounterList.swift */,
-				F26A6D4820E3AC6F0033BC49 /* StepperList.swift */,
-				F26A6D4A20E3AC880033BC49 /* Stepper.swift */,
+				F26A6D4A20E3AC880033BC49 /* Counter.swift */,
+				F26A6D4820E3AC6F0033BC49 /* CounterList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +201,15 @@
 			children = (
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		F27AB95F242ABC64003C1B3C /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB962242ABC95003C1B3C /* MainStepper.swift */,
+				F27AB960242ABC8A003C1B3C /* MainFlow.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		F2A6F33A20B3410B003409A3 = {
@@ -240,6 +239,7 @@
 			children = (
 				F2A6F34620B3410B003409A3 /* AppDelegate.swift */,
 				F27AB95D242A60EE003C1B3C /* Project Files */,
+				F27AB95F242ABC64003C1B3C /* Routing */,
 				F26A6D3120E2A1EF0033BC49 /* Scenes */,
 				F26A6D4520E3A5FA0033BC49 /* Model */,
 				F26A6D2F20E2A1910033BC49 /* Services */,
@@ -381,7 +381,6 @@
 				F26A6D4220E2D7130033BC49 /* CounterListStoryboard.storyboard in Resources */,
 				F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */,
 				F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */,
-				F2A6F34C20B3410B003409A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,14 +506,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */,
 				F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */,
 				F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */,
 				F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */,
-				F26A6D4920E3AC6F0033BC49 /* StepperList.swift in Sources */,
-				F26A6D4720E3AA220033BC49 /* CounterList.swift in Sources */,
+				F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
-				F26A6D4B20E3AC880033BC49 /* Stepper.swift in Sources */,
+				F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,
+				F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */,
 				F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */,
 				F26A6D5720E57BB50033BC49 /* CounterListRouter.swift in Sources */,
 			);
@@ -552,14 +552,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F2A6F34A20B3410B003409A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2A6F34B20B3410B003409A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -694,7 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDPU24L36V;
 				INFOPLIST_FILE = SimpleCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,7 +731,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDPU24L36V;
 				INFOPLIST_FILE = SimpleCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

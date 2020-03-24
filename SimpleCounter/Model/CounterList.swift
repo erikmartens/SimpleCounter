@@ -8,9 +8,8 @@
 
 import Foundation
 
-let kCounterListIdentifier = "de.erikmaximilianmartens.simple_counter.counter_list"
-
 struct CounterList {
     
-    var counterList: [String: [StepperList]]
+    var identifier: String
+    var stepperList: [String: [Counter]]
 }

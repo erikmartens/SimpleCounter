@@ -13,23 +13,6 @@ class DependencyManager {
     
     // MARK: - Properties
     
-    //    private let application: UIApplication
-    //    private let mainBundle: Bundle
-    private let fileManager: FileManager
-    private let fileDirectoryBaseUrlGetter: (() -> (URL))
-    
     // MARK: - Intialization
-    
-    init(/*application: UIApplication, mainBundle: Bundle, */fileManager: FileManager, fileDirectoryBaseUrlGetter: @escaping (() -> (URL))) {
-        //        self.application = application
-        //        self.mainBundle = mainBundle
-        self.fileManager = fileManager
-        self.fileDirectoryBaseUrlGetter = fileDirectoryBaseUrlGetter
-    }
-    
-    // MARK: - Dependencies
-    
-    lazy var dataStore: DataStore = { [unowned self] in
-        return DataStore(fileManager: fileManager, fileDirectoryBaseUrlGetter: fileDirectoryBaseUrlGetter)
-        }()
+
 }
