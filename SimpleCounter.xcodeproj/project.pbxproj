@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,14 +11,12 @@
 		A373E3C69A54541C5A17DC54 /* Pods_SimpleCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ECF40ED998849FEB970A91 /* Pods_SimpleCounterTests.framework */; };
 		F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */; };
 		F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3820E2A8BF0033BC49 /* DataStore.swift */; };
-		F26A6D3B20E2B8200033BC49 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3A20E2B8200033BC49 /* AppCoordinator.swift */; };
 		F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */; };
 		F26A6D4220E2D7130033BC49 /* CounterListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */; };
 		F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */; };
 		F26A6D4720E3AA220033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4620E3AA220033BC49 /* CounterList.swift */; };
 		F26A6D4920E3AC6F0033BC49 /* StepperList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* StepperList.swift */; };
 		F26A6D4B20E3AC880033BC49 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Stepper.swift */; };
-		F26A6D4E20E568790033BC49 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4D20E568790033BC49 /* Instantiable.swift */; };
 		F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */; };
 		F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5420E5785D0033BC49 /* R.generated.swift */; };
 		F26A6D5720E57BB50033BC49 /* CounterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */; };
@@ -56,15 +54,13 @@
 		C55870A5F892B7187C6E0EAF /* Pods-SimpleCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCounterTests/Pods-SimpleCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		F26A6D3820E2A8BF0033BC49 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		F26A6D3A20E2B8200033BC49 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewController.swift; sourceTree = "<group>"; };
 		F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CounterListStoryboard.storyboard; sourceTree = "<group>"; };
 		F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
 		F26A6D4620E3AA220033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
 		F26A6D4820E3AC6F0033BC49 /* StepperList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperList.swift; sourceTree = "<group>"; };
 		F26A6D4A20E3AC880033BC49 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		F26A6D4D20E568790033BC49 /* Instantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
-		F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = SimpleCounter/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F26A6D5420E5785D0033BC49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListRouter.swift; sourceTree = "<group>"; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,16 +131,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		F26A6D3020E2A1C20033BC49 /* Project Files */ = {
-			isa = PBXGroup;
-			children = (
-				F26A6D5420E5785D0033BC49 /* R.generated.swift */,
-				F2A6F34D20B3410C003409A3 /* Assets.xcassets */,
-				F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */,
-			);
-			path = "Project Files";
-			sourceTree = "<group>";
-		};
 		F26A6D3120E2A1EF0033BC49 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,13 +167,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		F26A6D3520E2A2B50033BC49 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		F26A6D3D20E2D3980033BC49 /* Counter List Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,12 +195,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F26A6D4C20E568510033BC49 /* Helpers */ = {
+		F27AB95D242A60EE003C1B3C /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
-				F26A6D4D20E568790033BC49 /* Instantiable.swift */,
+				F2A6F35220B3410C003409A3 /* Info.plist */,
+				F2A6F34D20B3410C003409A3 /* Assets.xcassets */,
+				F26A6D5420E5785D0033BC49 /* R.generated.swift */,
+				F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */,
 			);
-			path = Helpers;
+			name = "Project Files";
+			sourceTree = "<group>";
+		};
+		F27AB95E242A614E003C1B3C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		F2A6F33A20B3410B003409A3 = {
@@ -249,16 +238,13 @@
 		F2A6F34520B3410B003409A3 /* SimpleCounter */ = {
 			isa = PBXGroup;
 			children = (
-				F2A6F35220B3410C003409A3 /* Info.plist */,
 				F2A6F34620B3410B003409A3 /* AppDelegate.swift */,
-				F26A6D3A20E2B8200033BC49 /* AppCoordinator.swift */,
-				F26A6D3020E2A1C20033BC49 /* Project Files */,
+				F27AB95D242A60EE003C1B3C /* Project Files */,
 				F26A6D3120E2A1EF0033BC49 /* Scenes */,
 				F26A6D4520E3A5FA0033BC49 /* Model */,
 				F26A6D2F20E2A1910033BC49 /* Services */,
 				F26A6D3420E2A2750033BC49 /* Managers */,
-				F26A6D3520E2A2B50033BC49 /* Extensions */,
-				F26A6D4C20E568510033BC49 /* Helpers */,
+				F27AB95E242A614E003C1B3C /* Commons */,
 			);
 			path = SimpleCounter;
 			sourceTree = "<group>";
@@ -526,9 +512,7 @@
 				F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */,
 				F26A6D4920E3AC6F0033BC49 /* StepperList.swift in Sources */,
 				F26A6D4720E3AA220033BC49 /* CounterList.swift in Sources */,
-				F26A6D3B20E2B8200033BC49 /* AppCoordinator.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
-				F26A6D4E20E568790033BC49 /* Instantiable.swift in Sources */,
 				F26A6D4B20E3AC880033BC49 /* Stepper.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,
 				F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */,
@@ -715,6 +699,30 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/R.swift.Library/Rswift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxFlow/RxFlow.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/R.swift.Library\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxFlow\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"-fembed-bitcode",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -735,6 +743,30 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/R.swift.Library/Rswift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxFlow/RxFlow.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/R.swift.Library\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxFlow\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"-fembed-bitcode",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
