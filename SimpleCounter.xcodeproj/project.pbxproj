@@ -11,16 +11,18 @@
 		A373E3C69A54541C5A17DC54 /* Pods_SimpleCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ECF40ED998849FEB970A91 /* Pods_SimpleCounterTests.framework */; };
 		F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */; };
 		F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3820E2A8BF0033BC49 /* DataStore.swift */; };
-		F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */; };
-		F26A6D4220E2D7130033BC49 /* CounterListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */; };
-		F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */; };
 		F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* CounterList.swift */; };
 		F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Counter.swift */; };
 		F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */; };
 		F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5420E5785D0033BC49 /* R.generated.swift */; };
-		F26A6D5720E57BB50033BC49 /* CounterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */; };
 		F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB960242ABC8A003C1B3C /* MainFlow.swift */; };
 		F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB962242ABC95003C1B3C /* MainStepper.swift */; };
+		F27AB969242B9451003C1B3C /* CounterListObjectsListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */; };
+		F27AB96B242B9462003C1B3C /* CounterListObjectsListStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */; };
+		F27AB970242B98EE003C1B3C /* SettingsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */; };
+		F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB971242B98FD003C1B3C /* SettingsStepper.swift */; };
+		F27AB974242B9AE1003C1B3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F27AB973242B9AE1003C1B3C /* Podfile */; };
+		F27AB97B242B9C73003C1B3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F27AB97D242B9C73003C1B3C /* Localizable.strings */; };
 		F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F34620B3410B003409A3 /* AppDelegate.swift */; };
 		F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34D20B3410C003409A3 /* Assets.xcassets */; };
 		F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */; };
@@ -54,16 +56,20 @@
 		C55870A5F892B7187C6E0EAF /* Pods-SimpleCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCounterTests/Pods-SimpleCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		F26A6D3820E2A8BF0033BC49 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewController.swift; sourceTree = "<group>"; };
-		F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CounterListStoryboard.storyboard; sourceTree = "<group>"; };
-		F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
 		F26A6D4820E3AC6F0033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
 		F26A6D4A20E3AC880033BC49 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = SimpleCounter/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F26A6D5420E5785D0033BC49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListRouter.swift; sourceTree = "<group>"; };
 		F27AB960242ABC8A003C1B3C /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		F27AB962242ABC95003C1B3C /* MainStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStepper.swift; sourceTree = "<group>"; };
+		F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListObjectsListFlow.swift; sourceTree = "<group>"; };
+		F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListObjectsListStepper.swift; sourceTree = "<group>"; };
+		F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlow.swift; sourceTree = "<group>"; };
+		F27AB971242B98FD003C1B3C /* SettingsStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStepper.swift; sourceTree = "<group>"; };
+		F27AB973242B9AE1003C1B3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		F27AB978242B9C51003C1B3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F27AB97C242B9C73003C1B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F27AB97E242B9C75003C1B3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F34620B3410B003409A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2A6F34D20B3410C003409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,8 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				F26A6D3320E2A2430033BC49 /* Launchscreen Scene */,
-				F26A6D3D20E2D3980033BC49 /* Counter List Scene */,
-				F26A6D3E20E2D3B40033BC49 /* Settings Scene */,
+				F26A6D3D20E2D3980033BC49 /* Counter List Objects List Scene */,
+				F27AB964242B9385003C1B3C /* Counter List Object Scene */,
+				F27AB96E242B98B1003C1B3C /* Settings Scene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -158,22 +165,13 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		F26A6D3D20E2D3980033BC49 /* Counter List Scene */ = {
+		F26A6D3D20E2D3980033BC49 /* Counter List Objects List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				F26A6D4120E2D7130033BC49 /* CounterListStoryboard.storyboard */,
-				F26A6D3F20E2D3FB0033BC49 /* CounterListViewController.swift */,
-				F26A6D4320E2D7360033BC49 /* CounterListViewModel.swift */,
-				F26A6D5620E57BB50033BC49 /* CounterListRouter.swift */,
+				F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */,
+				F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */,
 			);
-			path = "Counter List Scene";
-			sourceTree = "<group>";
-		};
-		F26A6D3E20E2D3B40033BC49 /* Settings Scene */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Settings Scene";
+			path = "Counter List Objects List Scene";
 			sourceTree = "<group>";
 		};
 		F26A6D4520E3A5FA0033BC49 /* Model */ = {
@@ -192,6 +190,8 @@
 				F2A6F34D20B3410C003409A3 /* Assets.xcassets */,
 				F26A6D5420E5785D0033BC49 /* R.generated.swift */,
 				F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */,
+				F27AB973242B9AE1003C1B3C /* Podfile */,
+				F27AB97D242B9C73003C1B3C /* Localizable.strings */,
 			);
 			name = "Project Files";
 			sourceTree = "<group>";
@@ -199,6 +199,9 @@
 		F27AB95E242A614E003C1B3C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				F27AB966242B9412003C1B3C /* Constants */,
+				F27AB965242B93FE003C1B3C /* User Interface Base Object */,
+				F27AB967242B9426003C1B3C /* Extensions */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -206,10 +209,47 @@
 		F27AB95F242ABC64003C1B3C /* Routing */ = {
 			isa = PBXGroup;
 			children = (
-				F27AB962242ABC95003C1B3C /* MainStepper.swift */,
 				F27AB960242ABC8A003C1B3C /* MainFlow.swift */,
+				F27AB962242ABC95003C1B3C /* MainStepper.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		F27AB964242B9385003C1B3C /* Counter List Object Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Counter List Object Scene";
+			sourceTree = "<group>";
+		};
+		F27AB965242B93FE003C1B3C /* User Interface Base Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "User Interface Base Object";
+			sourceTree = "<group>";
+		};
+		F27AB966242B9412003C1B3C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F27AB967242B9426003C1B3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F27AB96E242B98B1003C1B3C /* Settings Scene */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */,
+				F27AB971242B98FD003C1B3C /* SettingsStepper.swift */,
+			);
+			path = "Settings Scene";
 			sourceTree = "<group>";
 		};
 		F2A6F33A20B3410B003409A3 = {
@@ -359,6 +399,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = F2A6F33A20B3410B003409A3;
 			productRefGroup = F2A6F34420B3410B003409A3 /* Products */;
@@ -377,9 +418,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB97B242B9C73003C1B3C /* Localizable.strings in Resources */,
 				F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */,
-				F26A6D4220E2D7130033BC49 /* CounterListStoryboard.storyboard in Resources */,
 				F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */,
+				F27AB974242B9AE1003C1B3C /* Podfile in Resources */,
 				F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,17 +548,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB970242B98EE003C1B3C /* SettingsFlow.swift in Sources */,
+				F27AB969242B9451003C1B3C /* CounterListObjectsListFlow.swift in Sources */,
 				F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */,
 				F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */,
 				F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */,
-				F26A6D4020E2D3FB0033BC49 /* CounterListViewController.swift in Sources */,
 				F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
 				F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */,
+				F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,
 				F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */,
-				F26A6D4420E2D7360033BC49 /* CounterListViewModel.swift in Sources */,
-				F26A6D5720E57BB50033BC49 /* CounterListRouter.swift in Sources */,
+				F27AB96B242B9462003C1B3C /* CounterListObjectsListStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,10 +595,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F27AB97D242B9C73003C1B3C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F27AB97C242B9C73003C1B3C /* en */,
+				F27AB97E242B9C75003C1B3C /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F2A6F35020B3410C003409A3 /* Base */,
+				F27AB978242B9C51003C1B3C /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -567,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -614,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -627,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -668,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -686,7 +741,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDPU24L36V;
 				INFOPLIST_FILE = SimpleCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,7 +786,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDPU24L36V;
 				INFOPLIST_FILE = SimpleCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

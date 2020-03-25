@@ -20,16 +20,13 @@ class MainFlow: Flow {
     UITabBarController()
   }()
   
-  // MARK: - Properties
-   
-   private let stepper: MainStepper
-  private weak var window: UIWindow?
-   
-   // MARK: - Initialization
-   
-   init(stepper: MainStepper) {
-     self.stepper = stepper
-   }
+  // MARK: - Initialization
+  
+  init() {}
+  
+  deinit {
+    print("\(String(describing: self)) was deinitialized")
+  }
   
   // MARK: - Functions
   
@@ -38,17 +35,33 @@ class MainFlow: Flow {
       return .none
     }
     switch step {
-    case .initial:
-      return summonMainTabBar()
+    case .rootTabBar:
+      return summonRootTabBar()
     }
   }
 }
 
 private extension MainFlow {
   
-  func summonMainTabBar() -> FlowContributors {
-    window?.rootViewController = rootViewController
+  func summonRootTabBar() -> FlowContributors {
     
-    return .none // TODO return .multiple
+    let counterListObjectsListFlow = CounterListObjectsListFlow()
+    let settingsFlow = SettingsFlow()
+    
+    Flows.whenReady(
+      flow1: counterListObjectsListFlow,
+      flow2: settingsFlow
+    ) {
+      [weak self] (counterListObjectsListRoot: UINavigationController, settingsRoot: UINavigationController) in
+      self?.rootViewController.viewControllers = [
+        counterListObjectsListRoot,
+        settingsRoot
+      ]
+    }
+    
+    return .multiple(flowContributors: [
+      .contribute(withNextPresentable: counterListObjectsListFlow, withNextStepper: CounterListObjectsListStepper()),
+      .contribute(withNextPresentable: settingsFlow, withNextStepper: SettingsStepper())
+    ])
   }
 }

@@ -1,26 +1,26 @@
 //
-//  MainStepper.swift
+//  SettingsStepper.swift
 //  SimpleCounter
 //
-//  Created by Erik Maximilian Martens on 24.03.20.
+//  Created by Erik Maximilian Martens on 25.03.20.
 //  Copyright © 2020 Erik Maximilian Martens. All rights reserved.
 //
 
 import RxCocoa
 import RxFlow
 
-enum MainStep: Step {
-  case rootTabBar
+enum SettingsStep: Step {
+  case settings
 }
 
-class MainStepper: Stepper {
+class SettingsStepper: Stepper {
   
   // MARK: - Assets
   
   var steps = PublishRelay<Step>()
   
   var initialStep: Step {
-    MainStep.rootTabBar
+    SettingsStep.settings
   }
   
   // MARK: - Functions
