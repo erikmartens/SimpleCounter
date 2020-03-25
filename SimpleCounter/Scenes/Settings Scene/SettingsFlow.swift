@@ -18,14 +18,14 @@ class SettingsFlow: Flow {
   
   private lazy var rootViewController: UINavigationController = {
     let navigationController = UINavigationController()
-    navigationController.tabBarItem.image = UIImage(systemName: "gear")
+    navigationController.tabBarItem.image = Constants.Theme.Symbol.settings(withWeight: .large)
     navigationController.tabBarItem.title = R.string.localizable.settings()
     return navigationController
   }()
   
   // MARK: - Initialization
   
-  init(){}
+  init() {}
   
   deinit {
     print("\(String(describing: self)) was deinitialized")

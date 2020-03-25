@@ -23,6 +23,8 @@
 		F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB971242B98FD003C1B3C /* SettingsStepper.swift */; };
 		F27AB974242B9AE1003C1B3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F27AB973242B9AE1003C1B3C /* Podfile */; };
 		F27AB97B242B9C73003C1B3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F27AB97D242B9C73003C1B3C /* Localizable.strings */; };
+		F27AB980242BB02C003C1B3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB97F242BB02C003C1B3C /* Constants.swift */; };
+		F27AB982242BB04A003C1B3C /* Constants+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB981242BB04A003C1B3C /* Constants+Theme.swift */; };
 		F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F34620B3410B003409A3 /* AppDelegate.swift */; };
 		F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34D20B3410C003409A3 /* Assets.xcassets */; };
 		F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */; };
@@ -70,6 +72,8 @@
 		F27AB978242B9C51003C1B3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F27AB97C242B9C73003C1B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F27AB97E242B9C75003C1B3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F27AB97F242BB02C003C1B3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F27AB981242BB04A003C1B3C /* Constants+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Theme.swift"; sourceTree = "<group>"; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F34620B3410B003409A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2A6F34D20B3410C003409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		F27AB966242B9412003C1B3C /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				F27AB97F242BB02C003C1B3C /* Constants.swift */,
+				F27AB981242BB04A003C1B3C /* Constants+Theme.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -555,6 +561,8 @@
 				F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */,
 				F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
+				F27AB982242BB04A003C1B3C /* Constants+Theme.swift in Sources */,
+				F27AB980242BB02C003C1B3C /* Constants.swift in Sources */,
 				F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */,
 				F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,

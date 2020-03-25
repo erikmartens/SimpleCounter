@@ -18,14 +18,14 @@ class CounterListObjectsListFlow: Flow {
   
   private lazy var rootViewController: UINavigationController = {
     let navigationController = UINavigationController()
-    navigationController.tabBarItem.image = UIImage(systemName: "text.justify")
+    navigationController.tabBarItem.image = Constants.Theme.Symbol.list(withWeight: .large)
     navigationController.tabBarItem.title = R.string.localizable.list()
     return navigationController
   }()
   
   // MARK: - Initialization
   
-  init(){}
+  init() {}
   
   deinit {
     print("\(String(describing: self)) was deinitialized")
