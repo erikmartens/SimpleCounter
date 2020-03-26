@@ -13,7 +13,6 @@
 		F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3820E2A8BF0033BC49 /* DataStore.swift */; };
 		F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* CounterList.swift */; };
 		F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Counter.swift */; };
-		F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */; };
 		F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5420E5785D0033BC49 /* R.generated.swift */; };
 		F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB960242ABC8A003C1B3C /* MainFlow.swift */; };
 		F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB962242ABC95003C1B3C /* MainStepper.swift */; };
@@ -25,6 +24,16 @@
 		F27AB97B242B9C73003C1B3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F27AB97D242B9C73003C1B3C /* Localizable.strings */; };
 		F27AB980242BB02C003C1B3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB97F242BB02C003C1B3C /* Constants.swift */; };
 		F27AB982242BB04A003C1B3C /* Constants+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB981242BB04A003C1B3C /* Constants+Theme.swift */; };
+		F27AB985242BE373003C1B3C /* TableDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB984242BE373003C1B3C /* TableDelegateDataSource.swift */; };
+		F27AB987242BE7BB003C1B3C /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB986242BE7BB003C1B3C /* TableSection.swift */; };
+		F27AB989242BE844003C1B3C /* TableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB988242BE844003C1B3C /* TableCellViewModel.swift */; };
+		F27AB98B242BE88E003C1B3C /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB98A242BE88E003C1B3C /* TableCell.swift */; };
+		F27AB98D242BE99D003C1B3C /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB98C242BE99D003C1B3C /* RoundedView.swift */; };
+		F27AB98F242BEB5E003C1B3C /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB98E242BEB5E003C1B3C /* DividerView.swift */; };
+		F27AB991242BEE06003C1B3C /* UIView+AddSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB990242BEE06003C1B3C /* UIView+AddSubview.swift */; };
+		F27AB993242C0175003C1B3C /* Collection+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */; };
+		F27AB995242C04B8003C1B3C /* TableCellPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB994242C04B8003C1B3C /* TableCellPosition.swift */; };
+		F27AB998242C0B94003C1B3C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F27AB997242C0B94003C1B3C /* .swiftlint.yml */; };
 		F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F34620B3410B003409A3 /* AppDelegate.swift */; };
 		F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34D20B3410C003409A3 /* Assets.xcassets */; };
 		F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */; };
@@ -60,7 +69,6 @@
 		F26A6D3820E2A8BF0033BC49 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		F26A6D4820E3AC6F0033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
 		F26A6D4A20E3AC880033BC49 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
-		F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = SimpleCounter/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F26A6D5420E5785D0033BC49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F27AB960242ABC8A003C1B3C /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		F27AB962242ABC95003C1B3C /* MainStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStepper.swift; sourceTree = "<group>"; };
@@ -74,6 +82,16 @@
 		F27AB97E242B9C75003C1B3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F27AB97F242BB02C003C1B3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F27AB981242BB04A003C1B3C /* Constants+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Theme.swift"; sourceTree = "<group>"; };
+		F27AB984242BE373003C1B3C /* TableDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDelegateDataSource.swift; sourceTree = "<group>"; };
+		F27AB986242BE7BB003C1B3C /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		F27AB988242BE844003C1B3C /* TableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellViewModel.swift; sourceTree = "<group>"; };
+		F27AB98A242BE88E003C1B3C /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		F27AB98C242BE99D003C1B3C /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		F27AB98E242BEB5E003C1B3C /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		F27AB990242BEE06003C1B3C /* UIView+AddSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubview.swift"; sourceTree = "<group>"; };
+		F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeIndex.swift"; sourceTree = "<group>"; };
+		F27AB994242C04B8003C1B3C /* TableCellPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellPosition.swift; sourceTree = "<group>"; };
+		F27AB997242C0B94003C1B3C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F34620B3410B003409A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2A6F34D20B3410C003409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,8 +211,8 @@
 				F2A6F35220B3410C003409A3 /* Info.plist */,
 				F2A6F34D20B3410C003409A3 /* Assets.xcassets */,
 				F26A6D5420E5785D0033BC49 /* R.generated.swift */,
-				F26A6D5120E56EAE0033BC49 /* .swiftlint.yml */,
 				F27AB973242B9AE1003C1B3C /* Podfile */,
+				F27AB997242C0B94003C1B3C /* .swiftlint.yml */,
 				F27AB97D242B9C73003C1B3C /* Localizable.strings */,
 			);
 			name = "Project Files";
@@ -229,6 +247,9 @@
 		F27AB965242B93FE003C1B3C /* User Interface Base Object */ = {
 			isa = PBXGroup;
 			children = (
+				F27AB983242BE347003C1B3C /* Table View */,
+				F27AB98C242BE99D003C1B3C /* RoundedView.swift */,
+				F27AB98E242BEB5E003C1B3C /* DividerView.swift */,
 			);
 			path = "User Interface Base Object";
 			sourceTree = "<group>";
@@ -245,6 +266,8 @@
 		F27AB967242B9426003C1B3C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F27AB990242BEE06003C1B3C /* UIView+AddSubview.swift */,
+				F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +279,18 @@
 				F27AB971242B98FD003C1B3C /* SettingsStepper.swift */,
 			);
 			path = "Settings Scene";
+			sourceTree = "<group>";
+		};
+		F27AB983242BE347003C1B3C /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB984242BE373003C1B3C /* TableDelegateDataSource.swift */,
+				F27AB986242BE7BB003C1B3C /* TableSection.swift */,
+				F27AB988242BE844003C1B3C /* TableCellViewModel.swift */,
+				F27AB98A242BE88E003C1B3C /* TableCell.swift */,
+				F27AB994242C04B8003C1B3C /* TableCellPosition.swift */,
+			);
+			path = "Table View";
 			sourceTree = "<group>";
 		};
 		F2A6F33A20B3410B003409A3 = {
@@ -321,7 +356,8 @@
 			buildConfigurationList = F2A6F36B20B3410C003409A3 /* Build configuration list for PBXNativeTarget "SimpleCounter" */;
 			buildPhases = (
 				F8E652C09E85CFDC7D669730 /* [CP] Check Pods Manifest.lock */,
-				F26A6D5320E578110033BC49 /* R.Swift Run Script */,
+				F27AB996242C0951003C1B3C /* Run SwiftLint */,
+				F26A6D5320E578110033BC49 /* R.Swift Generate File */,
 				F2A6F33F20B3410B003409A3 /* Sources */,
 				F2A6F34020B3410B003409A3 /* Frameworks */,
 				F2A6F34120B3410B003409A3 /* Resources */,
@@ -345,7 +381,6 @@
 				F2A6F35420B3410C003409A3 /* Frameworks */,
 				F2A6F35520B3410C003409A3 /* Resources */,
 				C6D05547A78D181AF97FD326 /* [CP] Embed Pods Frameworks */,
-				F26A6D2E20E299C60033BC49 /* Swift Lint Run Script */,
 			);
 			buildRules = (
 			);
@@ -387,13 +422,16 @@
 				TargetAttributes = {
 					F2A6F34220B3410B003409A3 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1130;
 					};
 					F2A6F35620B3410C003409A3 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = F2A6F34220B3410B003409A3;
 					};
 					F2A6F36120B3410C003409A3 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = F2A6F34220B3410B003409A3;
 					};
 				};
@@ -424,8 +462,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB998242C0B94003C1B3C /* .swiftlint.yml in Resources */,
 				F27AB97B242B9C73003C1B3C /* Localizable.strings in Resources */,
-				F26A6D5220E56EAE0033BC49 /* .swiftlint.yml in Resources */,
 				F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */,
 				F27AB974242B9AE1003C1B3C /* Podfile in Resources */,
 				F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */,
@@ -501,33 +539,37 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleCounterTests/Pods-SimpleCounterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F26A6D2E20E299C60033BC49 /* Swift Lint Run Script */ = {
+		F26A6D5320E578110033BC49 /* R.Swift Generate File */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Swift Lint Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
-		};
-		F26A6D5320E578110033BC49 /* R.Swift Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "R.Swift Run Script";
+			name = "R.Swift Generate File";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+		};
+		F27AB996242C0951003C1B3C /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		F8E652C09E85CFDC7D669730 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -554,18 +596,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB98D242BE99D003C1B3C /* RoundedView.swift in Sources */,
+				F27AB98B242BE88E003C1B3C /* TableCell.swift in Sources */,
 				F27AB970242B98EE003C1B3C /* SettingsFlow.swift in Sources */,
 				F27AB969242B9451003C1B3C /* CounterListObjectsListFlow.swift in Sources */,
 				F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */,
 				F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */,
 				F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */,
 				F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */,
+				F27AB989242BE844003C1B3C /* TableCellViewModel.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
 				F27AB982242BB04A003C1B3C /* Constants+Theme.swift in Sources */,
 				F27AB980242BB02C003C1B3C /* Constants.swift in Sources */,
+				F27AB995242C04B8003C1B3C /* TableCellPosition.swift in Sources */,
 				F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */,
+				F27AB985242BE373003C1B3C /* TableDelegateDataSource.swift in Sources */,
+				F27AB98F242BEB5E003C1B3C /* DividerView.swift in Sources */,
 				F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */,
+				F27AB991242BEE06003C1B3C /* UIView+AddSubview.swift in Sources */,
+				F27AB993242C0175003C1B3C /* Collection+SafeIndex.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,
+				F27AB987242BE7BB003C1B3C /* TableSection.swift in Sources */,
 				F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */,
 				F27AB96B242B9462003C1B3C /* CounterListObjectsListStepper.swift in Sources */,
 			);
@@ -780,7 +831,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -825,7 +876,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -846,7 +897,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCounter.app/SimpleCounter";
 			};
@@ -868,7 +919,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCounter.app/SimpleCounter";
 			};
@@ -888,7 +939,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleCounter;
 			};
@@ -908,7 +959,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmaximilianmartens.SimpleCounterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleCounter;
 			};

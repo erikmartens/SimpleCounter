@@ -1,14 +1,21 @@
 disabled_rules: # rule identifiers to exclude from running
 - trailing_whitespace
+- identifier_name
 
 opt_in_rules:
 - empty_count
+- unused_private_declaration
+- prohibited_interface_builder
+- modifier_order
+- file_name
+- first_where
+- fatal_error_message
+- empty_string
 
-included: # paths to ignore during linting. Takes precedence over `included`.
-- Stocard
-excluded:
-- external/generated
-- Stocard/analytics
+included:
+- SimpleCounter
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Pods
 
 force_cast: warning
 force_try:
@@ -37,8 +44,8 @@ large_tuple:
 identifier_name:
   min_length: 1
   max_length:
-    warning: 40
-    error: 60
+    warning: 60
+    error: 80
 type_name:
   min_length: 2
   max_length:

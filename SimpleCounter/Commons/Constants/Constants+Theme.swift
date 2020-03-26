@@ -43,5 +43,16 @@ extension Constants.Theme {
         return UIImage.SymbolConfiguration(weight: .semibold)
       }
     }
+    
+    var cornerRadiusValue: CGFloat {
+      switch self {
+      case .small:
+        return 4
+      case .medium:
+        return 8
+      case .large:
+        return 12
+      }
+    }
   }
 }

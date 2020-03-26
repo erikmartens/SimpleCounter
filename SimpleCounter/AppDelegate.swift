@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   // MARK: - Application Life Cycle
   
-  func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+  func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
     return true
   }
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     launchUserInterface()
     return true
   }
@@ -43,9 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 // MARK: - Helper Functions
 
-extension AppDelegate {
+private extension AppDelegate {
   
-  fileprivate func launchUserInterface() {
+  func launchUserInterface() {
     let mainFlow = MainFlow()
     flowCoordinator = FlowCoordinator()
     flowCoordinator?.coordinate(

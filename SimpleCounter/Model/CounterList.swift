@@ -9,7 +9,8 @@
 import Foundation
 
 struct CounterList {
-    
-    var identifier: String
-    var stepperList: [String: [Counter]]
+    let identifier: String
+    let title: String
+    let lastModifiedDate: Date
+    let associatedCounterIdentifiers: [String]
 }

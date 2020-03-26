@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import Foundation
 
 struct Counter {
-    
-    var identifier: String
-    var name: String
-    var color: UIColor
-    var count: UInt
-    var amount: Float
+    let identifier: String
+    let title: String
+    let color: UIColor
+    let count: Int
+    let value: Float?
 }
