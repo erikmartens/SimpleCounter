@@ -45,22 +45,22 @@ private extension MainFlow {
   
   func summonRootTabBar() -> FlowContributors {
     
-    let counterListObjectsListFlow = CounterListObjectsListFlow()
+    let listFlow = ListFlow()
     let settingsFlow = SettingsFlow()
     
     Flows.whenReady(
-      flow1: counterListObjectsListFlow,
+      flow1: listFlow,
       flow2: settingsFlow
     ) {
-      [weak self] (counterListObjectsListRoot: UINavigationController, settingsRoot: UINavigationController) in
+      [weak self] (listRoot: UINavigationController, settingsRoot: UINavigationController) in
       self?.rootViewController.viewControllers = [
-        counterListObjectsListRoot,
+        listRoot,
         settingsRoot
       ]
     }
     
     return .multiple(flowContributors: [
-      .contribute(withNextPresentable: counterListObjectsListFlow, withNextStepper: CounterListObjectsListStepper()),
+      .contribute(withNextPresentable: listFlow, withNextStepper: ListStepper()),
       .contribute(withNextPresentable: settingsFlow, withNextStepper: SettingsStepper())
     ])
   }

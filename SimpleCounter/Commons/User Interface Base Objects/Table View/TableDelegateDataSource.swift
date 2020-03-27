@@ -31,15 +31,7 @@ extension TableDelegateDataSource: UITableViewDelegate {
     guard let cell = cell as? TableCell else {
       fatalError("This cell type is unsupported. Please use `TableCell` instead.")
     }
-    switch cell.style {
-    case .none:
-      break
-    case .alwaysRounded:
-      cell.configureCellStyle(with: .middle, cornerRadius: Constants.Theme.Weight.medium.cornerRadiusValue)
-    case .cellPositonBased:
-      let cellPosition = indexPath.cellState(for: tableView.numberOfRows(inSection: indexPath.section))
-      cell.configureCellStyle(with: cellPosition, cornerRadius: Constants.Theme.Weight.medium.cornerRadiusValue)
-    }
+    cell.configureCellStyle(with: cell.style)
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -67,12 +59,6 @@ extension TableDelegateDataSource: UITableViewDataSource {
     }
     cell.configure(withViewModel: sectionsSource[indexPath])
     return cell
-  }
-}
-
-private extension BehaviorRelay where Element == [TableSection]? {
-  subscript (indexPath: IndexPath) -> TableCellViewModel? {
-    value?[safe: indexPath.section]?.sectionItems[safe: indexPath.row]
   }
 }
 

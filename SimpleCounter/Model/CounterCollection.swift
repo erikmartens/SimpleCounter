@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CounterList {
+struct CounterCollection {
     let identifier: String
     let title: String
     let lastModifiedDate: Date

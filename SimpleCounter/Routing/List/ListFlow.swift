@@ -8,7 +8,7 @@
 
 import RxFlow
 
-class CounterListObjectsListFlow: Flow {
+class ListFlow: Flow {
   
   // MARK: - Assets
   
@@ -34,25 +34,41 @@ class CounterListObjectsListFlow: Flow {
   // MARK: - Functions
   
   func navigate(to step: Step) -> FlowContributors {
-    guard let step = step as? CounterListObjectsListStep else {
+    guard let step = step as? ListStep else {
       return .none
     }
     switch step {
-    case .counterListObjectsList:
+    case .none:
+      return .none
+    case .counterCollectionsList:
       return summonCounterListObjectsList()
-    case let .counterListDetails(identifier):
+    case let .counterCollectionDetails(identifier):
       return summonCounterListDetails(for: identifier)
-    case .addCounterList:
+    case .addCounterCollection:
       return summonAddCounterList()
     }
   }
 }
 
-private extension CounterListObjectsListFlow {
+private extension ListFlow {
   
   func summonCounterListObjectsList() -> FlowContributors {
-    rootViewController.setViewControllers([UIViewController()], animated: false)
-    return .none // TODO return
+    let counterListObjectsListStepper = CounterCollectionsListStepper()
+    let counterListObjectsListFlow = CounterCollectionsListFlow(
+      dependencies: CounterCollectionsListViewModel.Dependencies(
+        stepper: counterListObjectsListStepper,
+        dataSource: CounterCollectionsListTableDelegateDataSource()
+      )
+    )
+    
+    Flows.whenReady(
+      flow1: counterListObjectsListFlow
+    ) {
+      [weak self] (counterListObjectsListRoot: CounterCollectionsListViewController) in
+      self?.rootViewController.setViewControllers([counterListObjectsListRoot], animated: false)
+    }
+    
+    return .one(flowContributor: .contribute(withNextPresentable: counterListObjectsListFlow, withNextStepper: counterListObjectsListStepper))
   }
   
   func summonCounterListDetails(for identifier: String) -> FlowContributors {

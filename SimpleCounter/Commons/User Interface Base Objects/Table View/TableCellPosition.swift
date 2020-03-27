@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum TableCellStyle {
+  case none
+  case alwaysRounded(cornerRadius: CGFloat)
+  case cellPositonBased(cellPosition: TableCellPosition, cornerRadius: CGFloat)
+}
+
 enum TableCellPosition {
   case top
   case middle

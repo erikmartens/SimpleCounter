@@ -11,13 +11,12 @@
 		A373E3C69A54541C5A17DC54 /* Pods_SimpleCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ECF40ED998849FEB970A91 /* Pods_SimpleCounterTests.framework */; };
 		F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */; };
 		F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D3820E2A8BF0033BC49 /* DataStore.swift */; };
-		F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* CounterList.swift */; };
+		F26A6D4920E3AC6F0033BC49 /* CounterCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4820E3AC6F0033BC49 /* CounterCollection.swift */; };
 		F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D4A20E3AC880033BC49 /* Counter.swift */; };
 		F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A6D5420E5785D0033BC49 /* R.generated.swift */; };
 		F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB960242ABC8A003C1B3C /* MainFlow.swift */; };
 		F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB962242ABC95003C1B3C /* MainStepper.swift */; };
-		F27AB969242B9451003C1B3C /* CounterListObjectsListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */; };
-		F27AB96B242B9462003C1B3C /* CounterListObjectsListStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */; };
+		F27AB969242B9451003C1B3C /* ListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB968242B9450003C1B3C /* ListFlow.swift */; };
 		F27AB970242B98EE003C1B3C /* SettingsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */; };
 		F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB971242B98FD003C1B3C /* SettingsStepper.swift */; };
 		F27AB974242B9AE1003C1B3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F27AB973242B9AE1003C1B3C /* Podfile */; };
@@ -34,11 +33,24 @@
 		F27AB993242C0175003C1B3C /* Collection+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */; };
 		F27AB995242C04B8003C1B3C /* TableCellPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB994242C04B8003C1B3C /* TableCellPosition.swift */; };
 		F27AB998242C0B94003C1B3C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F27AB997242C0B94003C1B3C /* .swiftlint.yml */; };
+		F27AB99A242CCA8F003C1B3C /* CounterCollectionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB999242CCA8F003C1B3C /* CounterCollectionsListViewModel.swift */; };
+		F27AB99C242CCAB0003C1B3C /* CounterCollectionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB99B242CCAAF003C1B3C /* CounterCollectionsListViewController.swift */; };
+		F27AB99E242CCAE6003C1B3C /* CounterCollectionsListTableDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB99D242CCAE6003C1B3C /* CounterCollectionsListTableDelegateDataSource.swift */; };
+		F27AB9A0242CCE7C003C1B3C /* Constants+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB99F242CCE7C003C1B3C /* Constants+Identifier.swift */; };
+		F27AB9A3242CD1E3003C1B3C /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9A2242CD1E3003C1B3C /* Factory.swift */; };
+		F27AB9A5242CD26F003C1B3C /* Factory+UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9A4242CD26F003C1B3C /* Factory+UIBarButtonItem.swift */; };
+		F27AB9A8242D3B7A003C1B3C /* CounterCollectionsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9A7242D3B7A003C1B3C /* CounterCollectionsListCell.swift */; };
+		F27AB9AA242D421B003C1B3C /* Factory+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9A9242D421B003C1B3C /* Factory+UITableView.swift */; };
+		F27AB9AE242D472C003C1B3C /* ListStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9AD242D472C003C1B3C /* ListStepper.swift */; };
+		F27AB9B0242D49B1003C1B3C /* CounterCollectionsListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9AF242D49B1003C1B3C /* CounterCollectionsListFlow.swift */; };
+		F27AB9B2242D4EE3003C1B3C /* CounterCollectionsListStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AB9B1242D4EE3003C1B3C /* CounterCollectionsListStepper.swift */; };
 		F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F34620B3410B003409A3 /* AppDelegate.swift */; };
 		F2A6F34E20B3410C003409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34D20B3410C003409A3 /* Assets.xcassets */; };
 		F2A6F35120B3410C003409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A6F34F20B3410C003409A3 /* LaunchScreen.storyboard */; };
 		F2A6F35C20B3410C003409A3 /* SimpleCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F35B20B3410C003409A3 /* SimpleCounterTests.swift */; };
 		F2A6F36720B3410C003409A3 /* SimpleCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6F36620B3410C003409A3 /* SimpleCounterUITests.swift */; };
+		F2B8CDD6242D58130083A3D4 /* UITableView+ReloadDataAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8CDD5242D58130083A3D4 /* UITableView+ReloadDataAnimated.swift */; };
+		F2B8CDD8242D6F040083A3D4 /* CounterCollectionsListTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8CDD7242D6F040083A3D4 /* CounterCollectionsListTableCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,13 +79,12 @@
 		C55870A5F892B7187C6E0EAF /* Pods-SimpleCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCounterTests/Pods-SimpleCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F26A6D3620E2A56A0033BC49 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		F26A6D3820E2A8BF0033BC49 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		F26A6D4820E3AC6F0033BC49 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
+		F26A6D4820E3AC6F0033BC49 /* CounterCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollection.swift; sourceTree = "<group>"; };
 		F26A6D4A20E3AC880033BC49 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		F26A6D5420E5785D0033BC49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F27AB960242ABC8A003C1B3C /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		F27AB962242ABC95003C1B3C /* MainStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStepper.swift; sourceTree = "<group>"; };
-		F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListObjectsListFlow.swift; sourceTree = "<group>"; };
-		F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListObjectsListStepper.swift; sourceTree = "<group>"; };
+		F27AB968242B9450003C1B3C /* ListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlow.swift; sourceTree = "<group>"; };
 		F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlow.swift; sourceTree = "<group>"; };
 		F27AB971242B98FD003C1B3C /* SettingsStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStepper.swift; sourceTree = "<group>"; };
 		F27AB973242B9AE1003C1B3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
@@ -92,6 +103,17 @@
 		F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeIndex.swift"; sourceTree = "<group>"; };
 		F27AB994242C04B8003C1B3C /* TableCellPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellPosition.swift; sourceTree = "<group>"; };
 		F27AB997242C0B94003C1B3C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		F27AB999242CCA8F003C1B3C /* CounterCollectionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListViewModel.swift; sourceTree = "<group>"; };
+		F27AB99B242CCAAF003C1B3C /* CounterCollectionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListViewController.swift; sourceTree = "<group>"; };
+		F27AB99D242CCAE6003C1B3C /* CounterCollectionsListTableDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListTableDelegateDataSource.swift; sourceTree = "<group>"; };
+		F27AB99F242CCE7C003C1B3C /* Constants+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Identifier.swift"; sourceTree = "<group>"; };
+		F27AB9A2242CD1E3003C1B3C /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		F27AB9A4242CD26F003C1B3C /* Factory+UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Factory+UIBarButtonItem.swift"; sourceTree = "<group>"; };
+		F27AB9A7242D3B7A003C1B3C /* CounterCollectionsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListCell.swift; sourceTree = "<group>"; };
+		F27AB9A9242D421B003C1B3C /* Factory+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Factory+UITableView.swift"; sourceTree = "<group>"; };
+		F27AB9AD242D472C003C1B3C /* ListStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStepper.swift; sourceTree = "<group>"; };
+		F27AB9AF242D49B1003C1B3C /* CounterCollectionsListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListFlow.swift; sourceTree = "<group>"; };
+		F27AB9B1242D4EE3003C1B3C /* CounterCollectionsListStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListStepper.swift; sourceTree = "<group>"; };
 		F2A6F34320B3410B003409A3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F34620B3410B003409A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2A6F34D20B3410C003409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +125,8 @@
 		F2A6F36220B3410C003409A3 /* SimpleCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6F36620B3410C003409A3 /* SimpleCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterUITests.swift; sourceTree = "<group>"; };
 		F2A6F36820B3410C003409A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B8CDD5242D58130083A3D4 /* UITableView+ReloadDataAnimated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadDataAnimated.swift"; sourceTree = "<group>"; };
+		F2B8CDD7242D6F040083A3D4 /* CounterCollectionsListTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCollectionsListTableCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +214,12 @@
 		F26A6D3D20E2D3980033BC49 /* Counter List Objects List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				F27AB968242B9450003C1B3C /* CounterListObjectsListFlow.swift */,
-				F27AB96A242B9461003C1B3C /* CounterListObjectsListStepper.swift */,
+				F27AB9AF242D49B1003C1B3C /* CounterCollectionsListFlow.swift */,
+				F27AB9B1242D4EE3003C1B3C /* CounterCollectionsListStepper.swift */,
+				F27AB999242CCA8F003C1B3C /* CounterCollectionsListViewModel.swift */,
+				F27AB99B242CCAAF003C1B3C /* CounterCollectionsListViewController.swift */,
+				F27AB99D242CCAE6003C1B3C /* CounterCollectionsListTableDelegateDataSource.swift */,
+				F27AB9A6242D3B60003C1B3C /* Table Cell */,
 			);
 			path = "Counter List Objects List Scene";
 			sourceTree = "<group>";
@@ -200,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F26A6D4A20E3AC880033BC49 /* Counter.swift */,
-				F26A6D4820E3AC6F0033BC49 /* CounterList.swift */,
+				F26A6D4820E3AC6F0033BC49 /* CounterCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +249,9 @@
 		F27AB95E242A614E003C1B3C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				F27AB965242B93FE003C1B3C /* User Interface Base Objects */,
+				F27AB9A1242CD1C6003C1B3C /* Factory */,
 				F27AB966242B9412003C1B3C /* Constants */,
-				F27AB965242B93FE003C1B3C /* User Interface Base Object */,
 				F27AB967242B9426003C1B3C /* Extensions */,
 			);
 			path = Commons;
@@ -233,6 +262,8 @@
 			children = (
 				F27AB960242ABC8A003C1B3C /* MainFlow.swift */,
 				F27AB962242ABC95003C1B3C /* MainStepper.swift */,
+				F27AB9AB242D4677003C1B3C /* List */,
+				F27AB9AC242D4684003C1B3C /* Settings */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -244,14 +275,14 @@
 			path = "Counter List Object Scene";
 			sourceTree = "<group>";
 		};
-		F27AB965242B93FE003C1B3C /* User Interface Base Object */ = {
+		F27AB965242B93FE003C1B3C /* User Interface Base Objects */ = {
 			isa = PBXGroup;
 			children = (
 				F27AB983242BE347003C1B3C /* Table View */,
 				F27AB98C242BE99D003C1B3C /* RoundedView.swift */,
 				F27AB98E242BEB5E003C1B3C /* DividerView.swift */,
 			);
-			path = "User Interface Base Object";
+			path = "User Interface Base Objects";
 			sourceTree = "<group>";
 		};
 		F27AB966242B9412003C1B3C /* Constants */ = {
@@ -259,6 +290,7 @@
 			children = (
 				F27AB97F242BB02C003C1B3C /* Constants.swift */,
 				F27AB981242BB04A003C1B3C /* Constants+Theme.swift */,
+				F27AB99F242CCE7C003C1B3C /* Constants+Identifier.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -266,8 +298,9 @@
 		F27AB967242B9426003C1B3C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F27AB990242BEE06003C1B3C /* UIView+AddSubview.swift */,
 				F27AB992242C0175003C1B3C /* Collection+SafeIndex.swift */,
+				F2B8CDD5242D58130083A3D4 /* UITableView+ReloadDataAnimated.swift */,
+				F27AB990242BEE06003C1B3C /* UIView+AddSubview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,8 +308,6 @@
 		F27AB96E242B98B1003C1B3C /* Settings Scene */ = {
 			isa = PBXGroup;
 			children = (
-				F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */,
-				F27AB971242B98FD003C1B3C /* SettingsStepper.swift */,
 			);
 			path = "Settings Scene";
 			sourceTree = "<group>";
@@ -291,6 +322,43 @@
 				F27AB994242C04B8003C1B3C /* TableCellPosition.swift */,
 			);
 			path = "Table View";
+			sourceTree = "<group>";
+		};
+		F27AB9A1242CD1C6003C1B3C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB9A2242CD1E3003C1B3C /* Factory.swift */,
+				F27AB9A4242CD26F003C1B3C /* Factory+UIBarButtonItem.swift */,
+				F27AB9A9242D421B003C1B3C /* Factory+UITableView.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F27AB9A6242D3B60003C1B3C /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB9A7242D3B7A003C1B3C /* CounterCollectionsListCell.swift */,
+				F2B8CDD7242D6F040083A3D4 /* CounterCollectionsListTableCellViewModel.swift */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F27AB9AB242D4677003C1B3C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB968242B9450003C1B3C /* ListFlow.swift */,
+				F27AB9AD242D472C003C1B3C /* ListStepper.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F27AB9AC242D4684003C1B3C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F27AB96F242B98EE003C1B3C /* SettingsFlow.swift */,
+				F27AB971242B98FD003C1B3C /* SettingsStepper.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F2A6F33A20B3410B003409A3 = {
@@ -596,18 +664,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27AB99E242CCAE6003C1B3C /* CounterCollectionsListTableDelegateDataSource.swift in Sources */,
+				F2B8CDD6242D58130083A3D4 /* UITableView+ReloadDataAnimated.swift in Sources */,
+				F27AB9A8242D3B7A003C1B3C /* CounterCollectionsListCell.swift in Sources */,
+				F2B8CDD8242D6F040083A3D4 /* CounterCollectionsListTableCellViewModel.swift in Sources */,
 				F27AB98D242BE99D003C1B3C /* RoundedView.swift in Sources */,
 				F27AB98B242BE88E003C1B3C /* TableCell.swift in Sources */,
 				F27AB970242B98EE003C1B3C /* SettingsFlow.swift in Sources */,
-				F27AB969242B9451003C1B3C /* CounterListObjectsListFlow.swift in Sources */,
+				F27AB9AE242D472C003C1B3C /* ListStepper.swift in Sources */,
+				F27AB969242B9451003C1B3C /* ListFlow.swift in Sources */,
+				F27AB9A3242CD1E3003C1B3C /* Factory.swift in Sources */,
+				F27AB9B2242D4EE3003C1B3C /* CounterCollectionsListStepper.swift in Sources */,
 				F27AB963242ABC95003C1B3C /* MainStepper.swift in Sources */,
 				F26A6D3920E2A8BF0033BC49 /* DataStore.swift in Sources */,
+				F27AB9B0242D49B1003C1B3C /* CounterCollectionsListFlow.swift in Sources */,
 				F26A6D3720E2A56A0033BC49 /* DependencyManager.swift in Sources */,
-				F26A6D4920E3AC6F0033BC49 /* CounterList.swift in Sources */,
+				F26A6D4920E3AC6F0033BC49 /* CounterCollection.swift in Sources */,
 				F27AB989242BE844003C1B3C /* TableCellViewModel.swift in Sources */,
 				F2A6F34720B3410B003409A3 /* AppDelegate.swift in Sources */,
 				F27AB982242BB04A003C1B3C /* Constants+Theme.swift in Sources */,
 				F27AB980242BB02C003C1B3C /* Constants.swift in Sources */,
+				F27AB9A0242CCE7C003C1B3C /* Constants+Identifier.swift in Sources */,
 				F27AB995242C04B8003C1B3C /* TableCellPosition.swift in Sources */,
 				F26A6D4B20E3AC880033BC49 /* Counter.swift in Sources */,
 				F27AB985242BE373003C1B3C /* TableDelegateDataSource.swift in Sources */,
@@ -615,10 +692,13 @@
 				F27AB972242B98FD003C1B3C /* SettingsStepper.swift in Sources */,
 				F27AB991242BEE06003C1B3C /* UIView+AddSubview.swift in Sources */,
 				F27AB993242C0175003C1B3C /* Collection+SafeIndex.swift in Sources */,
+				F27AB9A5242CD26F003C1B3C /* Factory+UIBarButtonItem.swift in Sources */,
 				F26A6D5520E5785E0033BC49 /* R.generated.swift in Sources */,
+				F27AB99C242CCAB0003C1B3C /* CounterCollectionsListViewController.swift in Sources */,
+				F27AB9AA242D421B003C1B3C /* Factory+UITableView.swift in Sources */,
 				F27AB987242BE7BB003C1B3C /* TableSection.swift in Sources */,
 				F27AB961242ABC8A003C1B3C /* MainFlow.swift in Sources */,
-				F27AB96B242B9462003C1B3C /* CounterListObjectsListStepper.swift in Sources */,
+				F27AB99A242CCA8F003C1B3C /* CounterCollectionsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

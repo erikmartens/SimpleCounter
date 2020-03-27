@@ -9,11 +9,15 @@
 import UIKit
 
 protocol DividerView: UIView {
-  var dividerView: UIView { get }
+  var dividerView: UIView? { get }
 }
 
 extension DividerView {
   func layoutDividerView(withLeadingView leadingView: UIView, bottomView: UIView, dividerColor: UIColor) {
+    guard let dividerView = dividerView else {
+      return
+    }
+    
     dividerView.backgroundColor = dividerColor
     dividerView.translatesAutoresizingMaskIntoConstraints = false
 

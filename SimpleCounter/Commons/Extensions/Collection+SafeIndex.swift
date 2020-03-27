@@ -6,10 +6,16 @@
 //  Copyright © 2020 Erik Maximilian Martens. All rights reserved.
 //
 
-import Foundation
+import RxCocoa
 
 extension Collection {
   subscript (safe index: Index) -> Element? {
       indices.contains(index) ? self[index] : nil
+  }
+}
+
+extension BehaviorRelay where Element == [TableSection]? {
+  subscript (indexPath: IndexPath) -> TableCellViewModel? {
+    return value?[safe: indexPath.section]?.sectionItems[safe: indexPath.row]
   }
 }

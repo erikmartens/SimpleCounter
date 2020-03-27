@@ -18,11 +18,21 @@ extension Constants.Theme {
 
 extension Constants.Theme {
   enum Symbol {
+    
+    static func add(withWeight weight: Constants.Theme.Weight) -> UIImage? {
+      UIImage(systemName: "plus.circle.fill", withConfiguration: weight.symbolConfiguration)
+    }
+    
     static func list(withWeight weight: Constants.Theme.Weight) -> UIImage? {
       UIImage(systemName: "text.justify", withConfiguration: weight.symbolConfiguration)
     }
+    
     static func settings(withWeight weight: Constants.Theme.Weight) -> UIImage? {
       UIImage(systemName: "gear", withConfiguration: weight.symbolConfiguration)
+    }
+    
+    static func sort(withWeight weight: Constants.Theme.Weight) -> UIImage? {
+      UIImage(systemName: "arrow.up.arrow.down.circle.fill", withConfiguration: weight.symbolConfiguration)
     }
   }
 }
